@@ -1410,7 +1410,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Selamat lu olang benar
+  m_text: space text message
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2181,31 +2181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51711a8025c12534bbf179d007de7aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soalSoal:
-  - pertanyaan: apa nama hewan ini?
-    petunjukJawaban: {fileID: 21300000, guid: d15c6a700737d264f9109460952d50dd, type: 3}
-    pilihanJawaban:
-    - komodo
-    - kadal
-    - ubur-ubur
-    - sigma cat
-    adalahBenar: 00000001
-  - pertanyaan: apa nama benda ini?
-    petunjukJawaban: {fileID: 21300000, guid: 622ccba3e13b83f4bb10d39fd3c71e73, type: 3}
-    pilihanJawaban:
-    - gitar listrik
-    - raket nyamuk
-    - raket tennis
-    - casing hp
-    adalahBenar: 00010000
-  - pertanyaan: siapa nama pemain film ini?
-    petunjukJawaban: {fileID: 21300000, guid: 350e9d96ae0f51743bcef9e56d75da4e, type: 3}
-    pilihanJawaban:
-    - heriawan
-    - herman putter
-    - harry potter
-    - hari mustang
-    adalahBenar: 00000100
+  _playerProgress: {fileID: 11400000, guid: 261af48080f1be740a6157b14513dd47, type: 2}
+  _soalSoal: {fileID: 11400000, guid: ac45e8363d06ac04f86aa6f73e5c39e1, type: 2}
   _pertanyaan: {fileID: 1245295499}
   _pilihanJawaban:
   - {fileID: 331361946}
@@ -3404,7 +3381,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: apa nama hewan ini?
+  m_text: space text pertanyaaan?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
