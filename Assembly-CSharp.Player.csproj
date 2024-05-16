@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D9AF5F5F-80F3-85DD-688A-1C3A24FBF1B5}</ProjectGuid>
+    <ProjectGuid>{2C2BDA3E-6BAE-A17C-3669-10FAB0A7C96F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -60,14 +60,21 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.13f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\LevelSoalKuis.cs" />
-    <Compile Include="Assets\LevelPackKuis.cs" />
-    <Compile Include="Assets\UI_Timer.cs" />
-    <Compile Include="Assets\LevelManager.cs" />
-    <Compile Include="Assets\PlayerProgress.cs" />
-    <Compile Include="Assets\UI_Pertanyaan.cs" />
-    <Compile Include="Assets\UI_PoinJawaban.cs" />
-    <Compile Include="Assets\UI_PesanLevel.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\LevelMenuDataManager.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\UI_Timer.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\PlayerProgress.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\LevelManager.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\LevelSoalKuis.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\UI_LevelKuisList.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\UI_PoinJawaban.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\GameSceneManager.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\UI_Pertanyaan.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\LevelPackKuis.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\UI_OpsiLevelPack.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\UI_PesanLevel.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\UI_LevelPackList.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\UI_OpsiLevelKuis.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\InisialDataGameplay.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -850,67 +857,67 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.2D.IK.Runtime.Player.csproj">
-      <Project>{86F017D4-0360-D4B3-9143-2B6742ADEB79}</Project>
+      <Project>{C2A0A531-1E37-FE01-6A33-3D93D4AEDB0E}</Project>
       <Name>Unity.2D.IK.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Burst.Player.csproj">
-      <Project>{496917F4-78B7-7A68-9CA3-AE48F23C3335}</Project>
+      <Project>{CE7ED781-1AA9-5ABB-7B4B-4A57C43831AB}</Project>
       <Name>Unity.Burst.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.Player.csproj">
-      <Project>{73FD80A1-6D1C-211F-032F-7579C6A73076}</Project>
+      <Project>{AA4C5414-CEDB-2E9E-AB1D-0AD282A6BBF5}</Project>
       <Name>Unity.VisualScripting.Core.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Runtime.Player.csproj">
-      <Project>{6E31976E-C1DF-3ABC-BCB2-5185E237278A}</Project>
+      <Project>{25FB5E35-4D55-FD52-EA7B-9E58E914A78B}</Project>
       <Name>Unity.2D.Animation.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Tilemap.Extras.Player.csproj">
-      <Project>{EEBC1DB3-7C9B-94FF-83A0-526D562A674E}</Project>
+      <Project>{BA606EDC-647E-547B-1CCB-76B091643F48}</Project>
       <Name>Unity.2D.Tilemap.Extras.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.Player.csproj">
-      <Project>{640F5E7E-3B70-EEA8-5557-8BF64A1B6694}</Project>
+      <Project>{215455C6-F3E2-44C6-53FB-4FF6651E8530}</Project>
       <Name>Unity.VisualScripting.Flow.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.001.Player.csproj">
-      <Project>{DD6CBD69-96F2-0A49-6730-1170547C5A81}</Project>
+      <Project>{8BA46605-795D-2AF5-C073-45ACA37DA057}</Project>
       <Name>Unity.InternalAPIEngineBridge.001.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Runtime.Player.csproj">
-      <Project>{6D914AEF-5779-79ED-0F2F-694CC0D20427}</Project>
+      <Project>{E93CABED-A1BD-461C-7540-277F570BC0CB}</Project>
       <Name>Unity.2D.Common.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{1AC9C4B9-5108-7225-F49B-BB68CC9848DD}</Project>
+      <Project>{460DF271-8EF8-84F7-3B54-3B214823458F}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Player.csproj">
-      <Project>{9F51B256-BF06-CF04-48A9-70905A7A0A47}</Project>
+      <Project>{2A1A8EE3-79C1-5610-9A39-C4CA23613965}</Project>
       <Name>Unity.Timeline.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Collections.Player.csproj">
-      <Project>{1F20BF20-A4DD-EC84-9668-AE59CD70D2DD}</Project>
+      <Project>{83AF13CB-EF5F-CF17-BD78-E45BB45CDF13}</Project>
       <Name>Unity.Collections.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.SpriteShape.Runtime.Player.csproj">
-      <Project>{3F4CCF4D-9818-CCF4-AE85-23C0BAFADE10}</Project>
+      <Project>{2F41E9ED-5EB9-03DC-27FC-0CC3F6557E86}</Project>
       <Name>Unity.2D.SpriteShape.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.PixelPerfect.Player.csproj">
-      <Project>{A21DD3A6-E323-4718-928A-815148A25370}</Project>
+      <Project>{78DEB39A-CBD1-6E0F-93F2-0C99F75A5912}</Project>
       <Name>Unity.2D.PixelPerfect.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.Player.csproj">
-      <Project>{088CAED2-265D-CFA0-DA54-CA1D4D0159C7}</Project>
+      <Project>{6432A5EF-97E1-7A2F-5946-F29E11019A28}</Project>
       <Name>Unity.Mathematics.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
-      <Project>{7614118B-DD7D-B2BA-FFA6-6D5E8FE542E2}</Project>
+      <Project>{11E890A7-E830-60B3-BA74-3A7FBFA0ADD0}</Project>
       <Name>Unity.TextMeshPro.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.Player.csproj">
-      <Project>{A877B9A2-968B-D00E-234E-28FE8520A941}</Project>
+      <Project>{E2BA2118-4DE4-A99C-C930-F33DC2E0E15F}</Project>
       <Name>Unity.VisualScripting.State.Player</Name>
     </ProjectReference>
   </ItemGroup>

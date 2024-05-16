@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{86F017D4-0360-D4B3-9143-2B6742ADEB79}</ProjectGuid>
+    <ProjectGuid>{C2A0A531-1E37-FE01-6A33-3D93D4AEDB0E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.IK.Runtime</AssemblyName>
@@ -834,11 +834,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.001.Player.csproj">
-      <Project>{DD6CBD69-96F2-0A49-6730-1170547C5A81}</Project>
+      <Project>{8BA46605-795D-2AF5-C073-45ACA37DA057}</Project>
       <Name>Unity.InternalAPIEngineBridge.001.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{1AC9C4B9-5108-7225-F49B-BB68CC9848DD}</Project>
+      <Project>{460DF271-8EF8-84F7-3B54-3B214823458F}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
   </ItemGroup>

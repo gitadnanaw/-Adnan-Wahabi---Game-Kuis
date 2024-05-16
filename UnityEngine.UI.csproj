@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{51F25D6F-DED3-5E7C-A769-9E2D0CBB06B3}</ProjectGuid>
+    <ProjectGuid>{2E1565C2-1284-CB9D-585D-C351C23E3D34}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>UnityEngine.UI</AssemblyName>
@@ -498,8 +498,20 @@
       <HintPath>Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Meryel.UnityCodeAssist.Serilog.Sinks.PersistentFile">
+      <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\Meryel.UnityCodeAssist.Serilog.Sinks.PersistentFile.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Meryel.UnityCodeAssist.SynchronizerModel">
+      <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\Meryel.UnityCodeAssist.SynchronizerModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Meryel.UnityCodeAssist.AsyncIO">
+      <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\Meryel.UnityCodeAssist.AsyncIO.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
@@ -510,12 +522,20 @@
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Meryel.UnityCodeAssist.YamlDotNet">
+      <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\Meryel.UnityCodeAssist.YamlDotNet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Meryel.UnityCodeAssist.Serilog">
+      <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\Meryel.UnityCodeAssist.Serilog.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
@@ -526,28 +546,8 @@
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Meryel.UnityCodeAssist.Serilog.Sinks.PersistentFile">
-      <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\Meryel.UnityCodeAssist.Serilog.Sinks.PersistentFile.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Meryel.UnityCodeAssist.YamlDotNet">
-      <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\Meryel.UnityCodeAssist.YamlDotNet.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Meryel.UnityCodeAssist.Serilog">
-      <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\Meryel.UnityCodeAssist.Serilog.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Meryel.UnityCodeAssist.SynchronizerModel">
-      <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\Meryel.UnityCodeAssist.SynchronizerModel.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Meryel.UnityCodeAssist.NaCl">
       <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\Meryel.UnityCodeAssist.NaCl.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Meryel.UnityCodeAssist.AsyncIO">
-      <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\Meryel.UnityCodeAssist.AsyncIO.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Meryel.UnityCodeAssist.NetMQ">
