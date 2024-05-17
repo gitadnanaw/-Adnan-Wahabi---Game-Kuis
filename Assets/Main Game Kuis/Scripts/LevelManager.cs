@@ -22,14 +22,13 @@ public class LevelManager : MonoBehaviour
     private void Start()
     {
 
-        //if (!_playerProgress.MuatProgres())
-        //{
-        //    _playerProgress.SimpanProgres();
-        //}
-        _soalSoal = _inisialData.levelPack;
+        
+        //_soalSoal = _inisialData.levelPack;
         _indexSoal = _inisialData.levelIndex - 1;
 
         NextLevel();
+
+        AudioManager.instance.PlayBGM(1);
 
         UI_PoinJawaban.EventJawabSoal += UI_PoinJawaban_EventJawabSoal;
     }
@@ -44,9 +43,13 @@ public class LevelManager : MonoBehaviour
     }
     private void UI_PoinJawaban_EventJawabSoal(string jawaban, bool adalahBenar)
     {
+        //var namaLevelPack = _inisialData.levelPack.name;
         if (adalahBenar)
         {
             _playerProgress.progresData.koin += 20;
+
+            //_playerProgress.progresData.progresLevel[namaLevelPack] = _indexSoal + 2;
+            //_playerProgress.SimpanProgres();
         }
     }
     public void NextLevel()

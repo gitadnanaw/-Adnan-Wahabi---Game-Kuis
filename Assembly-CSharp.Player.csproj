@@ -71,8 +71,11 @@
     <Compile Include="Assets\Main Game Kuis\Scripts\UI_Pertanyaan.cs" />
     <Compile Include="Assets\Main Game Kuis\Scripts\LevelPackKuis.cs" />
     <Compile Include="Assets\Main Game Kuis\Scripts\UI_OpsiLevelPack.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Main Game Kuis\Scripts\UI_PesanLevel.cs" />
     <Compile Include="Assets\Main Game Kuis\Scripts\UI_LevelPackList.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\PemanggilSuara.cs" />
+    <Compile Include="Assets\Main Game Kuis\Scripts\UI_MenuConfirmMessage.cs" />
     <Compile Include="Assets\Main Game Kuis\Scripts\UI_OpsiLevelKuis.cs" />
     <Compile Include="Assets\Main Game Kuis\Scripts\InisialDataGameplay.cs" />
   </ItemGroup>

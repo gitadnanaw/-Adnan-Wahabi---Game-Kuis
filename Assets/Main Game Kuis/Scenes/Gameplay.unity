@@ -177,6 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e98c803ab14e724f8a3dbc5d974cdd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 3488387347460839189}
   _opsiMenang: {fileID: 1149634438}
   _opsiKalah: {fileID: 835192317}
   _tempatPesan: {fileID: 483512478}
@@ -4288,8 +4289,37 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6524684439785633760, guid: f2fd32961d50a344395c6f75d5626892, type: 3}
       insertIndex: -1
       addedObject: {fileID: 33839266}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2079949275750630169, guid: f2fd32961d50a344395c6f75d5626892, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3488387347460839189}
   m_SourcePrefab: {fileID: 100100000, guid: f2fd32961d50a344395c6f75d5626892, type: 3}
+--- !u!1 &3488387347460839188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2079949275750630169, guid: f2fd32961d50a344395c6f75d5626892, type: 3}
+  m_PrefabInstance: {fileID: 3488387347460839187}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3488387347460839189
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3488387347460839188}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1c61c37e8c12be4e9abb46da21306df, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

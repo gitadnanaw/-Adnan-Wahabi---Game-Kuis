@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-using System.Runtime.Serialization.Formatters.Binary;
 
 [CreateAssetMenu(
     fileName = "Player Progress", 
@@ -18,19 +17,39 @@ public class PlayerProgress : ScriptableObject
     [SerializeField]
     private string _filename = "contoh.txt";
 
+    [SerializeField]
+    private string _startingLevelPackName = string.Empty;
+
     public MainData progresData = new MainData();
 
     public void SimpanProgres()
     {
-        progresData.koin = 200;
-        if (progresData.progresLevel == null)
-            progresData.progresLevel = new();
-        progresData.progresLevel.Add("Level Pack 1", 3);
-        progresData.progresLevel.Add("Level Pack 3", 5);
+        //progresData.koin = 200;
+        //if (progresData.progresLevel == null)
+        //    progresData.progresLevel = new();
+        //progresData.progresLevel.Add("Level Pack 1", 3);
+        //progresData.progresLevel.Add("Level Pack 3", 5);
 
-        var filename = "contoh.txt";
-        var directory = Application.dataPath + "/Temporary";
-        var path = directory + "/" + filename;
+        if(progresData.progresLevel == null)
+        {
+            progresData.progresLevel = new();
+            progresData.koin = 0;
+            progresData.progresLevel.Add(_startingLevelPackName, 1);
+        }
+
+        // Informasi penyimpanan data
+#if UNITY_EDITOR
+        string directory = Application.dataPath + "/Temporary/";
+#elif (UNITY_ANDROID || UNITY_IOS) && !UNITY_EDITOR
+    string directory = Application.persistentDataPath + "/ProgresLokal/";
+#endif
+
+        var path = directory + "/" + _filename;
+
+
+        //var filename = "contoh.txt";
+        //var directory = Application.dataPath + "/Temporary";
+        //var path = directory + "/" + filename;
 
         if (!Directory.Exists(directory))
         {
@@ -70,7 +89,7 @@ public class PlayerProgress : ScriptableObject
 
         fileStream.Dispose();
 
-        Debug.Log($"{filename} Berhasil Disimpan");
+        //Debug.Log($"{filename} Berhasil Disimpan");
     }
 
     public bool MuatProgres()
